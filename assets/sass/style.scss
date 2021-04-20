@@ -1,0 +1,142 @@
+// @import 'compass';
+
+/* Votre code SASS ici */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$font-stack: "Roboto", sans-serif;
+$text-bold: 700;
+$text-regular: 400;
+$main-title: 64px;
+$title-article: 40px;
+$text-size: 16px;
+$primary-color: #333;
+$text-center: center;
+$bg-gray: #f0f0f0;
+$ln-height: 24px;
+
+// General Style Start
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-size: $font-stack;
+   font-size: $text-size;
+   font-weight: $text-regular;
+   line-height: $ln-height;
+}
+.container {
+   max-width: 1130px;
+   width: 100%;
+   margin: auto;
+}
+.main-title {
+   font-family: $font-stack;
+   font-size: $main-title;
+   font-weight: $text-bold;
+   text-align: $text-center;
+   line-height: 1;
+}
+.title-line {
+   display: block;
+   width: 90px;
+   height: 5px;
+   background-color: $primary-color;
+   margin: 40px auto 0;
+}
+.hide {
+   display: none;
+}
+// General Style End
+// Banner Start
+.banner {
+   height: 905px;
+   background: url(/assets/img/intro-bg.jpg) no-repeat center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.banner .logo {
+   width: 300px;
+   margin: auto;
+}
+// Banner End
+// Articles Start
+.articles {
+   padding: 80px 0 0 0;
+}
+.article {
+   padding: 80px 0;
+}
+.article-wrapper {
+   max-width: 1120px;
+   width: 100%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.bg-gray {
+   background-color: $bg-gray;
+}
+.text-wrapper {
+   padding: 65px 0 0 0;
+   max-width: 360px;
+   width: 100%;
+   margin: auto;
+}
+.img-wrapper {
+   max-width: 540px;
+   width: 100%;
+}
+.post-title {
+   font-weight: $text-bold;
+   font-size: $title-article;
+   margin-bottom: 35px;
+}
+.post-desc {
+   font-size: $text-size;
+   margin-bottom: 40px;
+}
+.btn {
+   padding: 15px 35px;
+   font-size: $text-regular;
+   border: 1px solid #333;
+   text-align: $text-center;
+   color: $primary-color;
+   text-decoration: none;
+}
+.img-wrapper img {
+   width: 100%;
+}
+// Articles End
+
+// Responsive
+@media screen and (max-width: 768px) {
+   .banner {
+      height: 667px;
+   }
+   .banner .logo {
+      width: 174px;
+   }
+   .banner .logo img {
+      width: 100%;
+   }
+   .articles {
+      padding-bottom: 80px;
+   }
+   .main-title {
+      font-size: 24px;
+   }
+   .text-wrapper {
+      padding: 30px;
+   }
+   .order2 {
+      order: 1;
+   }
+   .order1 {
+      order: 2;
+   }
+}

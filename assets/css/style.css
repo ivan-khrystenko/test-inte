@@ -1,0 +1,138 @@
+/* Votre code SASS ici */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.container {
+  max-width: 1130px;
+  width: 100%;
+  margin: auto;
+}
+
+.main-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+}
+
+.title-line {
+  display: block;
+  width: 90px;
+  height: 5px;
+  background-color: #333;
+  margin: 40px auto 0;
+}
+
+.hide {
+  display: none;
+}
+
+.banner {
+  height: 905px;
+  background: url(/assets/img/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner .logo {
+  width: 300px;
+  margin: auto;
+}
+
+.articles {
+  padding: 80px 0 0 0;
+}
+
+.article {
+  padding: 80px 0;
+}
+
+.article-wrapper {
+  max-width: 1120px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bg-gray {
+  background-color: #f0f0f0;
+}
+
+.text-wrapper {
+  padding: 65px 0 0 0;
+  max-width: 360px;
+  width: 100%;
+  margin: auto;
+}
+
+.img-wrapper {
+  max-width: 540px;
+  width: 100%;
+}
+
+.post-title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.post-desc {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 15px 35px;
+  font-size: 400;
+  border: 1px solid #333;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.img-wrapper img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 667px;
+  }
+  .banner .logo {
+    width: 174px;
+  }
+  .banner .logo img {
+    width: 100%;
+  }
+  .articles {
+    padding-bottom: 80px;
+  }
+  .main-title {
+    font-size: 24px;
+  }
+  .text-wrapper {
+    padding: 30px;
+  }
+  .order2 {
+    order: 1;
+  }
+  .order1 {
+    order: 2;
+  }
+}
